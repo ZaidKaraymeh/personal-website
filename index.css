@@ -56,17 +56,32 @@
 
 .profile-skills > * {
   width: 100% !important;
-  height: 500px;
+  height: 100px;
   padding: 30px;
 }
 
 .profile, .skills {
-
+  
   text-align: left;
 }
 .profile h4, .skills h4{
 
   padding-bottom: 25px;
+}
+
+.skills ul li {
+  font-size: 20px;
+  /* padding: 10px 0px; */
+  justify-content: space-evenly;
+}
+
+.skills ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+.profile p {
+  font-size: 20px;
 }
 
 /* scrollbar */
@@ -91,6 +106,20 @@
 }
 
 
+ul {
+    list-style-type: none;
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .profile-skills {
+
+  
+    margin: 0 100px;
+  
+  }
+
+}
 
 @media only screen and (max-width: 1100px) {
   .profile-skills {
@@ -99,7 +128,7 @@
     align-items: center;
     justify-content: space-evenly;
     padding-top: 100px;
-    flex-direction: column;
+    flex-direction: row;
   }
   .profile {
     padding: 30px;
@@ -131,6 +160,7 @@
   .about {
     padding-top: 20px;
     padding-bottom: 20px;
+    height: 2100px;
   }
   .about div h1 {
     color: orange;
@@ -156,9 +186,35 @@
     margin-bottom: 50px;
     margin-right: 0px;
   }
+
+  .profile-skills {
+    display: flex;
+    /* padding-top: 100px; */
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .profile {
+    padding: 0px 0px 100px 0px;
+    
+  }
+  .skills {
+    margin: 500px 0px;
+  }
+
+  .skills ul li {
+    font-size: 20px;
+    padding: 0px 0px;
+    margin: 0px;
+}
 }
 
 @media only screen and (max-width: 600px) {
+  .about {
+    height: 1700px;
+  }
   .hero h1 {
     font-size: 45px;
   }
@@ -169,4 +225,49 @@
     opacity: 0.88;
     background-size: cover;
   }
+  .profile-skills {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    justify-content: space-evenly;
+    /* padding-top: 100px; */
+    flex-direction: column;
+
+  }
+  .profile {
+    height: 350px;
+    /* padding: 0px 0px 100px 0px; */
+    /* width: 200px; */
+    text-align: center;
+    padding: 0px;
+    word-break: break-all;
+  }
+
+  .profile h4, .skills h4{
+    font-size: 20px;
+  }
+
+  .profile p {
+    font-size: 18px;
+    width: 230px;
+    text-align: center;
+    padding: 0px;
+    margin: 10px;
+  }
+  
+  .skills {
+    margin: 1px 0px;
+    text-align: center;
+    height: 500px;
+  }
+  .skills ul{
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+  }
+  .contact {
+    /* height: 40px; */
+    padding-top: 20px;
+  }
+
 }
